@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "./Components/Common/Navbar";
+import BasicInfo from "./Components/Common/BasicInfo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +13,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="flex items-start justify-between bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300">
+          <BasicInfo />
+          {children}
+          <Navbar />
+        </div>
+      </body>
     </html>
   );
 }
