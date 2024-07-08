@@ -12,9 +12,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html data-theme="mytheme" lang="en">
       <body className={inter.className}>
-        <div className="flex items-start justify-between bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300">
+        <div className="flex items-start max-w-screen-xl mx-auto justify-between py-[200px] gap-10">
           <BasicInfo />
           {children}
           <Navbar />
