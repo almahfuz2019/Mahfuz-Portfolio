@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html data-theme="mytheme" lang="en">
       <body className={inter.className}>
-        <div className="flex items-start max-w-screen-xl mx-auto justify-between py-[200px] gap-10">
+        <div className="container  flex items-start  mx-auto justify-between  pb-24 pt-60 gap-8 max-w-[1200px] ">
           <BasicInfo />
           {children}
           <Navbar />
