@@ -1,9 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
-    /* background-image: url('https://images.pexels.com/photos/2457278/pexels-photo-2457278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');  */
     background-image: url('https://bostami-bootstrap-nextjs.vercel.app/assets/img/bg/page-bg-1.jpg'); 
     background-repeat: no-repeat; 
     background-size: cover;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Additional class for Roboto Slab font */
+.roboto-slab {
+    font-family: "Roboto Slab", sans-serif;
 }

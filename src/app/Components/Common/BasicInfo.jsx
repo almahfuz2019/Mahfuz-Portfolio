@@ -32,13 +32,13 @@ export default function BasicInfo() {
           <Image
             src="https://i.ibb.co/fpvLNdw/20240726-130302-1-removebg-preview-1.png"
             alt="Profile Picture"
-            className="w-full object-cover rounded-xl -mt-[50%]"
+            className="w-full object-cover rounded-xl -mt-[50%] shadow-2xl"
             width={500}
             height={500}
           />
         </div>
         <div className="py-6 text-center">
-          <h2 className="text-[26px] font-medium leading-[39px] ">
+          <h2 className="text-[26px] font-medium leading-[39px] roboto-slab ">
             Abdullah Al Mahfuz
           </h2>
           <p className="text-black text-sm my-2 font-medium leading-[28px] bg-secondary rounded-md py-[4px] px-[20px]">

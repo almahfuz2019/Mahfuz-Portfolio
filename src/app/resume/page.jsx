@@ -8,7 +8,9 @@ export default function page() {
     <div className="rounded-xl bg-white w-full p-6">
       {/* about me  */}
       <div className="flex mt-10 gap-x-4 justify-start items-center">
-        <h1 className="text-[42px] font-bold leading-[60px]">Resume</h1>
+        <h1 className="text-[42px] font-bold leading-[60px] roboto-slab ">
+          Resume
+        </h1>
         <div className="w-40 h-[3px] bg-primary"></div>
       </div>
 
@@ -102,7 +104,10 @@ export default function page() {
                   <span className="text-base font-medium text-black">
                     Next.js
                   </span>
-                  <span className="text-base font-medium text-black">High</span>
+                  <span className="text-base font-medium text-black">
+                    {" "}
+                    Intermediate
+                  </span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-1.5">
                   <div
@@ -117,7 +122,7 @@ export default function page() {
                     React.js
                   </span>
                   <span className="text-base font-medium text-[#4bafcb]">
-                    High
+                    Expert
                   </span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-1.5">
@@ -129,11 +134,27 @@ export default function page() {
               </div>
               <div>
                 <div className="flex justify-between mb-1">
+                  <span className="text-base font-medium text-[#d1bc17]">
+                    JavaScript
+                  </span>
+                  <span className="text-base font-medium text-[#d1bc17]">
+                    Intermediate
+                  </span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-1.5">
+                  <div
+                    className="bg-[#d1bc17] h-1.5 rounded-full"
+                    style={{ width: "70%" }}
+                  ></div>
+                </div>
+              </div>{" "}
+              <div>
+                <div className="flex justify-between mb-1">
                   <span className="text-base font-medium text-[#2c928d]">
                     TailwindCSS
                   </span>
                   <span className="text-base font-medium text-[#2c928d]">
-                    High
+                    Expert
                   </span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-1.5">
@@ -145,27 +166,11 @@ export default function page() {
               </div>
               <div>
                 <div className="flex justify-between mb-1">
-                  <span className="text-base font-medium text-[#d1bc17]">
-                    JavaScript
-                  </span>
-                  <span className="text-base font-medium text-[#d1bc17]">
-                    High
-                  </span>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-1.5">
-                  <div
-                    className="bg-[#d1bc17] h-1.5 rounded-full"
-                    style={{ width: "70%" }}
-                  ></div>
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between mb-1">
                   <span className="text-base font-medium text-[#7952B3]">
                     Bootstrap
                   </span>
                   <span className="text-base font-medium text-[#7952B3]">
-                    High
+                    Expert
                   </span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-1.5">
@@ -193,11 +198,35 @@ export default function page() {
                 DaisyUI
               </p>
               <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
-                React-Router-DOM v6
+                Node.js
+              </p>
+              <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
+                Express.js
+              </p>
+              <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
+                MongoDB
+              </p>
+              <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
+                Firebase
               </p>
               <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
                 React-Firebase-Hooks
               </p>
+              <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
+                React-Router-DOM v6
+              </p>
+              <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
+                Redux
+              </p>
+              <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
+                Redux Toolkit
+              </p>
+              <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
+                DevTools
+              </p>
+              <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
+                Cloud Server
+              </p>{" "}
               <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
                 Recharts
               </p>
@@ -211,40 +240,13 @@ export default function page() {
                 VSCode
               </p>
               <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
-                Redux
-              </p>
-              <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
-                Redux Toolkit
-              </p>
-              <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
-                DevTools
-              </p>
-              <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
-                Cloud Server
-              </p>
-              <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
                 MS Office
               </p>
               <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
                 Adobe Photoshop
               </p>
               <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
-                Adobe Illustrator
-              </p>
-              <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
                 Microcontroller
-              </p>
-              <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
-                Firebase
-              </p>
-              <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
-                Node.js
-              </p>
-              <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
-                Express.js
-              </p>
-              <p className="text-[15px] leading-[28px] text-[#44566C] bg-[#EDF2F2] py-[5px] px-[20px] rounded-lg">
-                MongoDB
               </p>
             </div>
           </div>
@@ -252,7 +254,8 @@ export default function page() {
       </div>
 
       <p className="text-center mt-6 text-base text-[#44566c]">
-        © 2024 All Rights Reserved by Al Mahfuz
+        © 2024 All Rights Reserved by{" "}
+        <span className="text-black">Al Mahfuz</span>
       </p>
     </div>
   );

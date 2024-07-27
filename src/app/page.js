@@ -8,7 +8,9 @@ export default function page() {
     <div className="rounded-xl bg-white w-full p-6">
       {/* about me  */}
       <div className="flex mt-10 gap-x-4 justify-start items-center">
-        <h1 className="text-[42px] font-bold leading-[60px]">About</h1>
+        <h1 className="text-[42px] font-bold leading-[60px] roboto-slab">
+          About
+        </h1>
         <div className="w-40 h-[3px] bg-primary"></div>
       </div>
       <p className="text-base text-[#44566c] mt-4">
@@ -156,7 +158,8 @@ export default function page() {
         </div>
       </div>
       <p className="text-center mt-6 text-base text-[#44566c]">
-        © 2024 All Rights Reserved by Al Mahfuz
+        © 2024 All Rights Reserved by{" "}
+        <span className="text-black">Al Mahfuz</span>
       </p>
     </div>
   );
