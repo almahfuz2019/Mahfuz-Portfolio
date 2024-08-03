@@ -78,7 +78,8 @@ export default function ContactForm() {
         </form>
       </div>
       <p className="text-center mt-6 text-base text-[#44566c]">
-        © 2024 All Rights Reserved by Al Mahfuz
+        © 2024 All Rights Reserved by{" "}
+        <span className="text-black">Al Mahfuz</span>
       </p>
     </div>
   );

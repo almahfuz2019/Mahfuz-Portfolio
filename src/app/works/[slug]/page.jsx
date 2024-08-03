@@ -9,7 +9,7 @@ const workData = {
   description:
     "Track Taka is an expense tracker application built on React JS, TailwindCSS, IndexedDB, and Firebase. Effortlessly monitor daily expenses with a sleek and intuitive interface. It features real-time data synchronization, secure authentication, and advanced expense categorization.",
   image:
-    "https://bostami-bootstrap-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fwork%2Fwork-img-1.png&w=384&q=75",
+    "https://tonmoydeb.com/_next/image?url=https%3A%2F%2Fmedia.graphassets.com%2F28lYcWKTtS0PPyFmPXnX&w=1920&q=75",
   technologies: ["Next.js", "TailwindCSS", "RTK Query", "Firebase"],
   performanceTest: "https://developers.google.com/speed/pagespeed/insights/",
   seoTest: "https://www.seoptimer.com/",
@@ -26,11 +26,7 @@ const workData = {
     "Advanced expense categorization",
     "Offline capabilities with IndexedDB",
   ],
-  screenshots: [
-    "https://via.placeholder.com/400x300.png?text=Screenshot+1",
-    "https://via.placeholder.com/400x300.png?text=Screenshot+2",
-    "https://via.placeholder.com/400x300.png?text=Screenshot+3",
-  ],
+  screenshots: ["https://i.ibb.co/g4hKFZK/Screenshot-2024-08-03-214156.png"],
 };
 
 const WorkDetails = () => {
@@ -45,29 +41,26 @@ const WorkDetails = () => {
       </Head>
 
       {/* Header */}
-      <div className="mt-10">
-        <h1 className="text-4xl font-extrabold leading-tight text-black roboto-slab">
+      <div className="flex mt-10 gap-x-4 justify-start items-center">
+        <h1 className="text-[42px] font-bold leading-[60px] roboto-slab ">
           {workData.title}
         </h1>
-        <div className="w-20 h-1 bg-gray-800 mt-4"></div>
+        <div className="w-40 h-[3px] bg-primary"></div>
       </div>
 
       {/* Project Overview */}
       <div className="mt-10 flex flex-col">
-        <div className="relative group p-4 bg-gray-100 rounded-lg shadow-lg text-black max-w-xl">
+        <div>
           <div className="overflow-hidden object-cover rounded-lg mb-4">
             <Image
               src={workData.image}
               alt={workData.title}
               width={400}
               height={300}
-              className="w-full object-cover rounded-lg group-hover:scale-110 transition-transform"
+              className="w-full object-cover rounded-lg"
             />
           </div>
-          <p className="text-base leading-6 text-gray-700">
-            {workData.description}
-          </p>
-          <div className="flex flex-wrap gap-2 justify-start items-start pt-4 pb-2">
+          <div className="flex flex-wrap gap-2 justify-start items-start py-4">
             {workData.technologies.map((tech, index) => (
               <span
                 key={index}
@@ -77,11 +70,14 @@ const WorkDetails = () => {
               </span>
             ))}
           </div>
+          <p className="text-base leading-6 text-gray-700">
+            {workData.description}
+          </p>
         </div>
 
         {/* Project Features */}
         <div className="mt-10 text-left max-w-xl">
-          <h2 className="text-2xl font-semibold leading-[36px] text-black">
+          <h2 className="text-2xl font-medium leading-[36px] text-black">
             Features
           </h2>
           <ul className="list-disc list-inside text-lg text-gray-800 mt-4 space-y-2">
@@ -92,22 +88,22 @@ const WorkDetails = () => {
         </div>
 
         {/* Project Screenshots */}
-        <div className="mt-10 text-left max-w-xl">
-          <h2 className="text-2xl font-semibold leading-[36px] text-black">
+        <div className="mt-10 text-left">
+          <h2 className="text-2xl font-medium leading-[36px] text-black">
             Screenshots
           </h2>
-          <div className="flex flex-wrap gap-4 justify-start mt-4">
+          <div className="mt-4">
             {workData.screenshots.map((src, index) => (
               <div
                 key={index}
-                className="w-48 h-32 bg-gray-100 rounded-lg shadow-lg overflow-hidden"
+                className="overflow-hidden w-full object-cover h-auto rounded-lg mb-4"
               >
                 <Image
                   src={src}
-                  alt={`Screenshot ${index + 1}`}
-                  width={192}
-                  height={128}
-                  className="object-cover w-full h-full"
+                  alt={workData.title}
+                  width={800}
+                  height={600}
+                  className="w-full object-cover border rounded-lg"
                 />
               </div>
             ))}
@@ -115,8 +111,8 @@ const WorkDetails = () => {
         </div>
 
         {/* Project Links */}
-        <div className="mt-10 text-left max-w-xl space-y-4">
-          <h2 className="text-2xl font-semibold leading-[36px] text-black">
+        <div className="mt-10 text-left space-y-4 bg-[#F8FBFB] rounded-xl py-4 px-6">
+          <h2 className="text-2xl font-medium leading-[36px] text-black">
             Project Links
           </h2>
           <div className="flex flex-wrap justify-start gap-4">
@@ -124,7 +120,7 @@ const WorkDetails = () => {
               href={workData.performanceTest}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-gray-200 text-gray-800 rounded-full px-4 py-2 font-medium shadow-lg transition-transform transform hover:scale-105"
+              className="flex items-center gap-2 text-primary hover:underline"
             >
               <FaExternalLinkAlt /> Performance Test
             </a>
@@ -132,7 +128,7 @@ const WorkDetails = () => {
               href={workData.seoTest}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-gray-200 text-gray-800 rounded-full px-4 py-2 font-medium shadow-lg transition-transform transform hover:scale-105"
+              className="flex items-center gap-2 text-primary hover:underline"
             >
               <FaExternalLinkAlt /> SEO Test
             </a>
@@ -140,7 +136,7 @@ const WorkDetails = () => {
               href={workData.liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-gray-200 text-gray-800 rounded-full px-4 py-2 font-medium shadow-lg transition-transform transform hover:scale-105"
+              className="flex items-center gap-2 text-primary hover:underline"
             >
               <FaExternalLinkAlt /> Live Link
             </a>
@@ -148,27 +144,33 @@ const WorkDetails = () => {
               href={workData.githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-gray-200 text-gray-800 rounded-full px-4 py-2 font-medium shadow-lg transition-transform transform hover:scale-105"
+              className="flex items-center gap-2 text-primary hover:underline"
             >
               <FaGithub /> GitHub Link
             </a>
           </div>
           {workData.loginDetails && (
-            <div className="mt-4 text-lg text-gray-800">
-              <strong>Login Details:</strong>{" "}
-              <span className="flex items-center gap-2">
-                <FaUser /> {workData.loginDetails.username}, <FaLock />{" "}
-                {workData.loginDetails.password}
-              </span>
+            <div className="mt-10">
+              <h2 className="text-2xl font-medium leading-[36px] text-black">
+                Login Details
+              </h2>
+              <div className="flex flex-wrap justify-start gap-4">
+                <p className="flex items-center gap-2">
+                  <FaUser /> {workData.loginDetails.username}
+                </p>
+                <p className="flex items-center gap-2">
+                  <FaLock /> {workData.loginDetails.password}
+                </p>
+              </div>
             </div>
           )}
         </div>
       </div>
 
       {/* Footer */}
-      <p className="text-left mt-12 text-base text-gray-800">
+      <p className="text-center mt-6 text-base text-[#44566c]">
         © 2024 All Rights Reserved by{" "}
-        <span className="font-bold text-black">Al Mahfuz</span>
+        <span className="text-black">Al Mahfuz</span>
       </p>
     </div>
   );

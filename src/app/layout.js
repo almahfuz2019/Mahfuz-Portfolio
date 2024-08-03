@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
         <link rel="canonical" href={metadata.url} />
       </Head>
       <body className={`${robotoSlab.className} ${poppins.className}`}>
-        <div className="container flex items-start mx-auto justify-between pb-24 pt-60 gap-8 max-w-[1200px]">
+        <div className="container flex items-start mx-auto justify-between pb-24 pt-60 gap-8 max-w-screen-xl px-4">
           <BasicInfo />
           {children}
           <Navbar />
