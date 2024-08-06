@@ -12,15 +12,15 @@ export default function ContactForm() {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <div className="rounded-xl bg-white w-full p-6">
+    <div className="rounded-lg bg-white w-full p-6">
       <div className="flex mt-10 gap-x-4 justify-start items-center">
         <h1 className="text-[42px] font-bold leading-[60px] roboto-slab ">
           Contact
         </h1>
         <div className="w-40 h-[3px] bg-primary"></div>
       </div>
-      <div className="bg-[#F8FBFB] p-6 rounded-xl mt-6">
-        <p className="mt-4 text-2xl text-[#44566C]">
+      <div className="bg-[#F8FBFB] p-6 rounded-lg mt-6">
+        <p className="mt-4 text-2xl text-accent">
           I'm Always Open To Discussing Product
         </p>
         <p className="font-bold mt-4  text-2xl">Design work or partnerships.</p>
@@ -70,14 +70,14 @@ export default function ContactForm() {
           <div className="text-center">
             <button
               type="submit"
-              className="px-6 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition duration-300 ease-in-out transform hover:bg-primary-dark hover:scale-105 hover:shadow-lg"
+              className="px-6 py-2 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition duration-300 ease-in-out transform hover:bg-primary-dark hover:scale-105 hover:shadow-lg"
             >
               Submit
             </button>
           </div>
         </form>
       </div>
-      <p className="text-center mt-6 text-base text-[#44566c]">
+      <p className="text-center mt-6 text-base text-accent">
         © 2024 All Rights Reserved by{" "}
         <span className="text-black">Al Mahfuz</span>
       </p>

@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./Components/Common/Navbar";
 import BasicInfo from "./Components/Common/BasicInfo";
 import Head from "next/head";
+import Navbar_For_Top from "./Components/Common/Navbar_For_Top";
 
 const robotoSlab = Roboto_Slab({
   subsets: ["latin"],
@@ -51,7 +52,13 @@ export default function RootLayout({ children }) {
         <link rel="canonical" href={metadata.url} />
       </Head>
       <body className={`${robotoSlab.className} ${poppins.className}`}>
-        <div className="container flex items-start mx-auto justify-between pb-24 pt-60 gap-8 max-w-screen-xl px-4">
+        <div className="container mx-auto max-w-screen-xl px-4">
+          <Navbar_For_Top />
+        </div>
+        <div className="container block lg:hidden items-start  mx-auto justify-center pb-24 pt-24 gap-6 max-w-screen-xl px-4">
+          {children}
+        </div>
+        <div className="container lg:flex hidden items-start mx-auto justify-between pb-24 pt-60 gap-6 max-w-screen-xl px-4">
           <BasicInfo />
           {children}
           <Navbar />

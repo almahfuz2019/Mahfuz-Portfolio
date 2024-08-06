@@ -1,15 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* https://images.pexels.com/photos/2078266/pexels-photo-2078266.jpeg?auto=compress&cs=tinysrgb&w=600 */
+/* https://cdn.pixabay.com/photo/2016/10/29/10/14/abstract-1780378_960_720.png */
+/* https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+/* https://images.pexels.com/photos/4505907/pexels-photo-4505907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+/* https://images.pexels.com/photos/2078266/pexels-photo-2078266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+
+/* https://images.pexels.com/photos/6775241/pexels-photo-6775241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+
+/* https://images.pexels.com/photos/7023732/pexels-photo-7023732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+
+/* https://images.pexels.com/photos/7130497/pexels-photo-7130497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+/* https://images.pexels.com/photos/4505907/pexels-photo-4505907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+
+/* https://images.pexels.com/photos/961897/pexels-photo-961897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+/* https://images.pexels.com/photos/5227427/pexels-photo-5227427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+
+/* https://images.pexels.com/photos/7635621/pexels-photo-7635621.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+/* https://images.pexels.com/photos/3952048/pexels-photo-3952048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+/* https://images.pexels.com/photos/2748757/pexels-photo-2748757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+/* importent  */
+/* https://images.pexels.com/photos/19944121/pexels-photo-19944121/free-photo-of-close-up-of-a-modern-construction-against-clear-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 
+
+https://images.pexels.com/photos/6749092/pexels-photo-6749092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+*/
 
 body {
-    background-image: url('https://bostami-bootstrap-nextjs.vercel.app/assets/img/bg/page-bg-1.jpg'); 
-    background-repeat: no-repeat; 
-    background-size: cover;
-    font-family: "Poppins", sans-serif;
+  background-image: url("https://images.pexels.com/photos/6749092/pexels-photo-6749092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 ");
+  /* rotate: 180; */
+  background-repeat: repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  background-position: fixed;
+  backdrop-filter: blur(8px); /* Adjust the blur amount as needed */
+  min-height: 100vh;
+}
+
+/* Fallback for browsers that do not support backdrop-filter */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(8px);
+  z-index: -1;
 }
 
 /* Additional class for Roboto Slab font */
 .roboto-slab {
-    font-family: "Roboto Slab", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
 }

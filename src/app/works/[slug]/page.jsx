@@ -31,7 +31,7 @@ const workData = {
 
 const WorkDetails = () => {
   return (
-    <div className="rounded-xl bg-white w-full p-6">
+    <div className="rounded-lg bg-white w-full p-6">
       <Head>
         <title>{workData.title} - Abdullah Al Mahfuz</title>
         <meta
@@ -43,7 +43,8 @@ const WorkDetails = () => {
       {/* Header */}
       <div className="flex mt-10 gap-x-4 justify-start items-center">
         <h1 className="text-[42px] font-bold leading-[60px] roboto-slab ">
-          {workData.title}
+          <span className="hidden md:block"> {workData.title}</span>{" "}
+          <span className="md:hidden block">Project</span>
         </h1>
         <div className="w-40 h-[3px] bg-primary"></div>
       </div>
@@ -70,7 +71,7 @@ const WorkDetails = () => {
               </span>
             ))}
           </div>
-          <p className="text-base leading-6 text-gray-700">
+          <p className="text-base leading-6 text-accent">
             {workData.description}
           </p>
         </div>
@@ -80,7 +81,7 @@ const WorkDetails = () => {
           <h2 className="text-2xl font-medium leading-[36px] text-black">
             Features
           </h2>
-          <ul className="list-disc list-inside text-lg text-gray-800 mt-4 space-y-2">
+          <ul className="list-disc list-inside text-base text-accent mt-4 space-y-2">
             {workData.features.map((feature, index) => (
               <li key={index}>{feature}</li>
             ))}
@@ -111,8 +112,11 @@ const WorkDetails = () => {
         </div>
 
         {/* Project Links */}
-        <div className="mt-10 text-left space-y-4 bg-[#F8FBFB] rounded-xl py-4 px-6">
-          <h2 className="text-2xl font-medium leading-[36px] text-black">
+        <div className=" text-left md:block hidden  py-16 mt-16 bg-[#F8FBFB] rounded-lg px-6">
+          <h2
+            className="text-2xl mb-3 font-medium
+           leading-[36px] "
+          >
             Project Links
           </h2>
           <div className="flex flex-wrap justify-start gap-4">
@@ -124,6 +128,7 @@ const WorkDetails = () => {
             >
               <FaExternalLinkAlt /> Performance Test
             </a>
+            |
             <a
               href={workData.seoTest}
               target="_blank"
@@ -132,6 +137,7 @@ const WorkDetails = () => {
             >
               <FaExternalLinkAlt /> SEO Test
             </a>
+            |
             <a
               href={workData.liveLink}
               target="_blank"
@@ -140,6 +146,7 @@ const WorkDetails = () => {
             >
               <FaExternalLinkAlt /> Live Link
             </a>
+            |
             <a
               href={workData.githubLink}
               target="_blank"
@@ -150,15 +157,80 @@ const WorkDetails = () => {
             </a>
           </div>
           {workData.loginDetails && (
-            <div className="mt-10">
-              <h2 className="text-2xl font-medium leading-[36px] text-black">
+            <div className="mt-10 ">
+              <h2 className="text-2xl mb-3 font-medium leading-[36px] ">
                 Login Details
               </h2>
-              <div className="flex flex-wrap justify-start gap-4">
-                <p className="flex items-center gap-2">
+
+              <div className="flex flex-wrap  justify-start gap-4">
+                <p className="flex items-center gap-2 text-primary">
                   <FaUser /> {workData.loginDetails.username}
                 </p>
-                <p className="flex items-center gap-2">
+                |
+                <p className="flex items-center gap-2 text-primary">
+                  <FaLock /> {workData.loginDetails.password}
+                </p>
+              </div>
+            </div>
+          )}
+        </div>
+        {/* Project Links */}
+        <div className=" text-left  md:hidden block    py-16 mt-16 bg-[#F8FBFB] rounded-lg px-6">
+          <h2
+            className="text-2xl mb-3 font-medium
+           leading-[36px] "
+          >
+            Project Links
+          </h2>
+          <div className="flex flex-col md:flex-wrap justify-start gap-4">
+            <a
+              href={workData.performanceTest}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-primary hover:underline"
+            >
+              <FaExternalLinkAlt /> Performance Test
+            </a>
+            <span className="hidden md:block">|</span>
+            <a
+              href={workData.seoTest}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-primary hover:underline"
+            >
+              <FaExternalLinkAlt /> SEO Test
+            </a>
+            <span className="hidden md:block">|</span>
+            <a
+              href={workData.liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-primary hover:underline"
+            >
+              <FaExternalLinkAlt /> Live Link
+            </a>
+            <span className="hidden md:block">|</span>
+            <a
+              href={workData.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-primary hover:underline"
+            >
+              <FaGithub /> GitHub Link
+            </a>
+          </div>
+          {workData.loginDetails && (
+            <div className="mt-10 ">
+              <h2 className="text-2xl mb-3 font-medium leading-[36px] ">
+                Login Details
+              </h2>
+
+              <div className="flex flex-col md:flex-wrap  justify-start gap-4">
+                <p className="flex items-center gap-2 text-primary">
+                  <FaUser /> {workData.loginDetails.username}
+                </p>
+                <span className="hidden md:block">|</span>
+                <p className="flex items-center gap-2 text-primary">
                   <FaLock /> {workData.loginDetails.password}
                 </p>
               </div>
@@ -168,7 +240,7 @@ const WorkDetails = () => {
       </div>
 
       {/* Footer */}
-      <p className="text-center mt-6 text-base text-[#44566c]">
+      <p className="text-center mt-6 text-base text-accent">
         © 2024 All Rights Reserved by{" "}
         <span className="text-black">Al Mahfuz</span>
       </p>

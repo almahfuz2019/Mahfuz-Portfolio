@@ -9,34 +9,40 @@ import { FaInfoCircle } from "react-icons/fa";
 
 export default function Page() {
   return (
-    <div className="rounded-xl bg-white w-full p-6">
+    <div className="rounded-lg bg-white w-full p-6">
       {/* about me  */}
-      <div className="flex mt-10 gap-x-4 justify-start items-center">
+      <div className="flex mt-10 gap-x-4 justify-start items-center mb-5">
         <h1 className="text-[42px] font-bold leading-[60px] roboto-slab ">
-          Portfolio
+          Works
         </h1>
         <div className="w-40 h-[3px] bg-primary"></div>
       </div>
 
       <Tabs>
-        <TabList className="flex justify-end mb-4 border-b-0">
+        <TabList className="flex justify-end mb-4 ">
           <Tab
-            className="px-4 py-2 cursor-pointer border-none bg-none "
+            className="px-3 py-2 cursor-pointer border-none bg-none text-xl font-medium"
             selectedClassName="text-primary border-none"
           >
             All
           </Tab>
           <Tab
-            className="px-4 py-2 cursor-pointer border-none bg-none "
+            className="px-3 py-2 cursor-pointer border-none bg-none text-xl font-medium"
             selectedClassName="text-primary border-none"
           >
-            Mockup
+            Front-End
+          </Tab>
+          <Tab
+            className="px-3 py-2 cursor-pointer border-none bg-none text-xl font-medium"
+            selectedClassName="text-primary border-none"
+          >
+            Full-Stack
           </Tab>
         </TabList>
 
         <TabPanel>
-          <div className="grid grid-cols-2 gap-6">
-            <div className="relative group p-4 bg-[#F5F5F5] rounded-lg transition-transform transform duration-500 ease-in-out hover:shadow-lg">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="relative group p-4 bg-[#EEF5FA] rounded-lg transition-transform transform duration-500 ease-in-out hover:shadow">
               <div className="overflow-hidden object-cover rounded-lg mb-4">
                 <Image
                   src="https://tonmoydeb.com/_next/image?url=https%3A%2F%2Fmedia.graphassets.com%2F28lYcWKTtS0PPyFmPXnX&w=1920&q=75"
@@ -47,17 +53,16 @@ export default function Page() {
                 />
               </div>
               <Link href="/works/chul-urina">
-                <p className="cursor-pointer text-lg font-medium group-hover:text-blue-500 transition-colors duration-500 ease-in-out">
+                <p className="cursor-pointer text-xl font-medium group-hover:text-blue-500 transition-colors duration-500 ease-in-out">
                   Chul Urina
                 </p>
               </Link>
-              <p className="mt-1 text-xs font-normal group-hover:text-gray-700 transition-colors duration-500 ease-in-out">
+              <p className="mt-1 text-sm  font-normal  transition-colors duration-500 ease-in-out text-accent">
                 Track Taka is an expense tracker application built on React JS,
-                TailwindCSS, IndexedDB, and Firebase. Effortlessly monitor daily
-                expenses &
+                TailwindCSS, IndexedDB,...
               </p>
               <div className="flex flex-wrap gap-1.5 justify-start items-start pt-4 pb-2">
-                <span className="inline-block bg-gray-200 border border-primary border-opacity-10 rounded-full px-2 py-0.5 text-xs font-medium text-gray-700">
+                <span className="inline-block bg-gray-200 border border-primary border-opacity-10 rounded-full px-2 py-0.5 text-xs font-medium text-gray-700 ">
                   Next js
                 </span>
                 <span className="inline-block bg-gray-200 border border-primary border-opacity-10 rounded-full px-2 py-0.5 text-xs font-medium text-gray-700">
@@ -74,7 +79,7 @@ export default function Page() {
                 </span>
               </div>
             </div>
-            <div className="relative group p-4 bg-[#F5F5F5] rounded-lg transition-transform transform duration-500 ease-in-out hover:shadow-lg">
+            <div className="relative group p-4 bg-[#faf7ef] rounded-lg transition-transform transform duration-500 ease-in-out hover:shadow">
               <div className="overflow-hidden object-cover rounded-lg mb-4">
                 <Image
                   src="https://tonmoydeb.com/_next/image?url=https%3A%2F%2Fmedia.graphassets.com%2FhIXJ8G4fTqqU7OkFN4Fb&w=1920&q=75"
@@ -85,14 +90,13 @@ export default function Page() {
                 />
               </div>
               <Link href="/works/chul-urina">
-                <p className="cursor-pointer text-lg font-medium group-hover:text-blue-500 transition-colors duration-500 ease-in-out">
+                <p className="cursor-pointer text-xl font-medium group-hover:text-blue-500 transition-colors duration-500 ease-in-out">
                   Chul Urina
                 </p>
               </Link>
-              <p className="mt-1 text-xs font-normal group-hover:text-gray-700 transition-colors duration-500 ease-in-out">
+              <p className="mt-1 text-sm  font-normal  transition-colors duration-500 ease-in-out text-accent">
                 Track Taka is an expense tracker application built on React JS,
-                TailwindCSS, IndexedDB, and Firebase. Effortlessly monitor daily
-                expenses &
+                TailwindCSS, IndexedDB,...
               </p>
               <div className="flex flex-wrap gap-1.5 justify-start items-start pt-4 pb-2">
                 <span className="inline-block bg-gray-200 border border-primary border-opacity-10 rounded-full px-2 py-0.5 text-xs font-medium text-gray-700">
@@ -106,7 +110,7 @@ export default function Page() {
                 </span>
               </div>
             </div>
-            <div className="relative group p-4 bg-[#F5F5F5] rounded-lg transition-transform transform duration-500 ease-in-out hover:shadow-lg">
+            <div className="relative group p-4 bg-[#faf7ef] rounded-lg transition-transform transform duration-500 ease-in-out hover:shadow">
               <div className="overflow-hidden object-cover rounded-lg mb-4">
                 <Image
                   src="https://tonmoydeb.com/_next/image?url=https%3A%2F%2Fmedia.graphassets.com%2FvdbgiWPQnuBTy4CIyWGQ&w=1920&q=75"
@@ -117,14 +121,13 @@ export default function Page() {
                 />
               </div>
               <Link href="/works/chul-urina">
-                <p className="cursor-pointer text-lg font-medium group-hover:text-blue-500 transition-colors duration-500 ease-in-out">
+                <p className="cursor-pointer text-xl font-medium group-hover:text-blue-500 transition-colors duration-500 ease-in-out">
                   Chul Urina
                 </p>
               </Link>
-              <p className="mt-1 text-xs font-normal group-hover:text-gray-700 transition-colors duration-500 ease-in-out">
+              <p className="mt-1 text-sm  font-normal  transition-colors duration-500 ease-in-out text-accent">
                 Track Taka is an expense tracker application built on React JS,
-                TailwindCSS, IndexedDB, and Firebase. Effortlessly monitor daily
-                expenses &
+                TailwindCSS, IndexedDB,...
               </p>
               <div className="flex flex-wrap gap-1.5 justify-start items-start pt-4 pb-2">
                 <span className="inline-block bg-gray-200 border border-primary border-opacity-10 rounded-full px-2 py-0.5 text-xs font-medium text-gray-700">
@@ -138,17 +141,54 @@ export default function Page() {
                 </span>
               </div>
             </div>
+            <div className="relative group p-4 bg-[#EEF5FA] rounded-lg transition-transform transform duration-500 ease-in-out hover:shadow">
+              <div className="overflow-hidden object-cover rounded-lg mb-4">
+                <Image
+                  src="https://tonmoydeb.com/_next/image?url=https%3A%2F%2Fmedia.graphassets.com%2FhIXJ8G4fTqqU7OkFN4Fb&w=1920&q=75"
+                  alt="Chul Urina"
+                  width={400}
+                  height={300}
+                  className="w-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                />
+              </div>
+              <Link href="/works/chul-urina">
+                <p className="cursor-pointer text-xl font-medium group-hover:text-blue-500 transition-colors duration-500 ease-in-out">
+                  Chul Urina
+                </p>
+              </Link>
+              <p className="mt-1 text-sm  font-normal  transition-colors duration-500 ease-in-out text-accent">
+                Track Taka is an expense tracker application built on React JS,
+                TailwindCSS, IndexedDB,...
+              </p>
+              <div className="flex flex-wrap gap-1.5 justify-start items-start pt-4 pb-2">
+                <span className="inline-block bg-gray-200 border border-primary border-opacity-10 rounded-full px-2 py-0.5 text-xs font-medium text-gray-700">
+                  Next js
+                </span>
+                <span className="inline-block bg-gray-200 border border-primary border-opacity-10 rounded-full px-2 py-0.5 text-xs font-medium text-gray-700">
+                  IndexedDB
+                </span>
+                <span className="inline-block bg-gray-200 border border-primary border-opacity-10 rounded-full px-2 py-0.5 text-xs font-medium text-gray-700">
+                  Firebase
+                </span>
+              </div>
+            </div>
           </div>
         </TabPanel>
         <TabPanel>
-          <div className="flex flex-col items-center justify-center h-64 bg-gray-100 rounded-lg">
-            <FaInfoCircle className="text-4xl text-gray-500 mb-4" />
-            <p className="text-xl text-gray-500">Nothing is Here</p>
+          <div className="flex flex-col items-center justify-center h-64 bg-[#F8FBFB] rounded-lg">
+            <FaInfoCircle className="text-4xl text-accent mb-4 animate-pulse" />
+            <p className="text-xl text-accent ">Nothing is here</p>
+          </div>
+        </TabPanel>
+        <TabPanel>
+          <div className="flex flex-col items-center justify-center h-64 bg-[#F8FBFB] rounded-lg">
+            <FaInfoCircle className="text-4xl text-accent mb-4 animate-pulse" />
+            <p className="text-xl text-accent ">Nothing is here</p>
           </div>
         </TabPanel>
       </Tabs>
 
-      <p className="text-center mt-10 text-base text-[#44566c]">
+      <p className="text-center mt-10 text-base text-accent bg-[#F8FBFB] py-5 rounded-lg">
         © 2024 All Rights Reserved by{" "}
         <span className="text-black">Al Mahfuz</span>
       </p>
