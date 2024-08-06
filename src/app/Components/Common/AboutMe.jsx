@@ -119,37 +119,37 @@ export default function AboutMe() {
         <div className="mt-10">
           <Marquee pauseOnHover="true" pauseOnClick="true">
             <Image
-              src="/Images/client-logo-1.webp"
+              src="/Images/no_clients.png"
               alt="Profile Picture"
-              className="mx-6"
+              className="mx-5 rounded-lg"
               width="100"
               height="60"
             />
             <Image
-              src="/Images/client-logo-1.webp"
+              src="/Images/no_clients.png"
               alt="Profile Picture"
-              className="mx-6"
+              className="mx-5 rounded-lg"
               width="100"
               height="60"
             />
             <Image
-              src="/Images/client-logo-1.webp"
+              src="/Images/no_clients.png"
               alt="Profile Picture"
-              className="mx-6"
+              className="mx-5 rounded-lg"
               width="100"
               height="60"
             />
             <Image
-              src="/Images/client-logo-1.webp"
+              src="/Images/no_clients.png"
               alt="Profile Picture"
-              className="mx-6"
+              className="mx-5 rounded-lg"
               width="100"
               height="60"
             />
             <Image
-              src="/Images/client-logo-1.webp"
+              src="/Images/no_clients.png"
               alt="Profile Picture"
-              className="mx-6"
+              className="mx-5 rounded-lg"
               width="100"
               height="60"
             />
