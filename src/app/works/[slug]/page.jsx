@@ -42,8 +42,8 @@ const WorkDetails = () => {
 
       {/* Header */}
       <div className="flex mt-10 gap-x-4 justify-start items-center">
-        <h1 className="text-[42px] font-bold leading-[60px] roboto-slab ">
-          <span className="hidden md:block"> {workData.title}</span>{" "}
+        <h1 className="text-[42px] font-bold leading-[60px] roboto-slab">
+          <span className="hidden md:block">{workData.title}</span>
           <span className="md:hidden block">Project</span>
         </h1>
         <div className="w-40 h-[3px] bg-primary"></div>
@@ -112,11 +112,8 @@ const WorkDetails = () => {
         </div>
 
         {/* Project Links */}
-        <div className=" text-left md:block hidden  py-16 mt-16 bg-[#F8FBFB] rounded-lg px-6">
-          <h2
-            className="text-2xl mb-3 font-medium
-           leading-[36px] "
-          >
+        <div className="text-left py-16 mt-16 bg-[#F8FBFB] rounded-lg px-6">
+          <h2 className="text-2xl mb-3 font-medium leading-[36px]">
             Project Links
           </h2>
           <div className="flex flex-wrap justify-start gap-4">
@@ -157,79 +154,16 @@ const WorkDetails = () => {
             </a>
           </div>
           {workData.loginDetails && (
-            <div className="mt-10 ">
-              <h2 className="text-2xl mb-3 font-medium leading-[36px] ">
+            <div className="mt-10">
+              <h2 className="text-2xl mb-3 font-medium leading-[36px]">
                 Login Details
               </h2>
 
-              <div className="flex flex-wrap  justify-start gap-4">
+              <div className="flex flex-wrap justify-start gap-4">
                 <p className="flex items-center gap-2 text-primary">
                   <FaUser /> {workData.loginDetails.username}
                 </p>
                 |
-                <p className="flex items-center gap-2 text-primary">
-                  <FaLock /> {workData.loginDetails.password}
-                </p>
-              </div>
-            </div>
-          )}
-        </div>
-        {/* Project Links */}
-        <div className=" text-left  md:hidden block    py-16 mt-16 bg-[#F8FBFB] rounded-lg px-6">
-          <h2
-            className="text-2xl mb-3 font-medium
-           leading-[36px] "
-          >
-            Project Links
-          </h2>
-          <div className="flex flex-col md:flex-wrap justify-start gap-4">
-            <a
-              href={workData.performanceTest}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-primary hover:underline"
-            >
-              <FaExternalLinkAlt /> Performance Test
-            </a>
-            <span className="hidden md:block">|</span>
-            <a
-              href={workData.seoTest}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-primary hover:underline"
-            >
-              <FaExternalLinkAlt /> SEO Test
-            </a>
-            <span className="hidden md:block">|</span>
-            <a
-              href={workData.liveLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-primary hover:underline"
-            >
-              <FaExternalLinkAlt /> Live Link
-            </a>
-            <span className="hidden md:block">|</span>
-            <a
-              href={workData.githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-primary hover:underline"
-            >
-              <FaGithub /> GitHub Link
-            </a>
-          </div>
-          {workData.loginDetails && (
-            <div className="mt-10 ">
-              <h2 className="text-2xl mb-3 font-medium leading-[36px] ">
-                Login Details
-              </h2>
-
-              <div className="flex flex-col md:flex-wrap  justify-start gap-4">
-                <p className="flex items-center gap-2 text-primary">
-                  <FaUser /> {workData.loginDetails.username}
-                </p>
-                <span className="hidden md:block">|</span>
                 <p className="flex items-center gap-2 text-primary">
                   <FaLock /> {workData.loginDetails.password}
                 </p>
