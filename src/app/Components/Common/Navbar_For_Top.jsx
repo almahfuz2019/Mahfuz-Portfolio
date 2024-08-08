@@ -43,13 +43,16 @@ export default function Navbar_For_Top() {
             alt=""
             className="md:h-24 h-24 w-auto rounded-lg"
           /> */}
-          <Image
-            src="https://i.ibb.co/cDwvmMf/Black-White-Simpel-Monogram-Initial-Logo-3.png"
-            height={100}
-            width={300}
-            alt=""
-            className="md:h-32 h-20 w-auto rounded-lg"
-          />
+          <Link href="/">
+            {" "}
+            <Image
+              src="/Images/logo.png"
+              height={100}
+              width={300}
+              alt=""
+              className="md:h-32 h-20 w-auto rounded-lg"
+            />
+          </Link>
           {/* <Image
             src="https://i.ibb.co/qBbcXZd/Black-White-Simpel-Monogram-Initial-Logo-1.png"
             height={100}
